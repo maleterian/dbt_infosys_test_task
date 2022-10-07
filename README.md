@@ -3,8 +3,10 @@ Welcome to your new dbt project!
 ### Using the starter project
 
 Try running the following commands:
-- dbt run
-- dbt test
+- dbt debug --target dev --profiles-dir .
+- dbt debug --target prod --profiles-dir .
+- dbt run --target prod --profiles-dir .
+- dbt run --target dev --profiles-dir .
 
 
 ### Resources:
