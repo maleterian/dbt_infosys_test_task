@@ -1,3 +1,4 @@
+-- depends on {{ ref('distinctCountryCount') }}
 SELECT
   a.reportDate,
   a.operatingSystem,
