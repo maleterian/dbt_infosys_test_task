@@ -4,11 +4,11 @@ dbt_infosys:
     dev:
       type: bigquery
       method: service-account
-      project: dbt-cloud-XXX  # name of the project in BigQuery
+      project: dbt-cloud-XXX-dev  # name of the project in BigQuery
       dataset: dbt_google_analytics
       location : US
       threads: 4
-      keyfile: /secrets/dbt-service-keyfile-dev.json
+      keyfile: ~/secrets/dbt-service-keyfile-dev.json
       timeout_seconds: 300
       priority: interactive
       retries: 1
