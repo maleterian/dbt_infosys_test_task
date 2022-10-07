@@ -1,0 +1,62 @@
+
+version: 2
+
+models:
+  - name: totalPageViews
+    description: "total Page Views"
+    columns:
+      - name: reportDate
+        description: "Report date, partition column"
+        tests:          
+          - not_null
+
+      - name: operatingSystem
+        description: "Operating system, clustering column"
+        tests:          
+          - not_null
+
+      - name: totalPageViews
+        description: "total Page Views"
+        tests:          
+          - not_null       
+    
+  - name: distinctCountryCount
+    description: "Distinct country count"
+    columns:
+      - name: reportDate
+        description: "Report date, partition column"
+        tests:          
+          - not_null
+
+      - name: operatingSystem
+        description: "Operating system, clustering column"
+        tests:          
+          - not_null
+
+      - name: distinctCountryCount
+        description: "Distinct country count"
+        tests:          
+          - not_null      
+
+  - name: usersReport
+    description: "Distinct country count"
+    columns:
+      - name: reportDate
+        description: "Report date, partition column"
+        tests:          
+          - not_null
+
+      - name: operatingSystem
+        description: "Operating system, clustering column"
+        tests:          
+          - not_null                   
+
+      - name: distinctCountryCount
+        description: "Distinct country count"
+        tests:          
+          - not_null
+
+      - name: totalPageViews
+        description: "total Page Views"
+        tests:          
+          - not_null            
