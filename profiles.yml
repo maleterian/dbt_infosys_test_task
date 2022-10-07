@@ -4,11 +4,11 @@ dbt_infosys:
     dev:
       type: bigquery
       method: service-account
-      project: dbt-cloud-XXX-dev  # name of the project in BigQuery
+      project: dbt-cloud-364513  # name of the project in BigQuery
       dataset: dbt_google_analytics
       location : US
       threads: 4
-      keyfile: ~/secrets/dbt-service-keyfile-dev.json
+      keyfile: /home/ubartgcp1/secrets/dbt-service-keyfile-dev.json
       timeout_seconds: 300
       priority: interactive
       retries: 1
@@ -16,11 +16,11 @@ dbt_infosys:
     prod: # your production environment
       type: bigquery
       method: service-account
-      project: dbt-cloud-XXX-prod  # name of the project in BigQuery
+      project: dbt-cloud-364513-prod  # name of the project in BigQuery
       dataset: dbt_google_analytics
       location : US
       threads: 4
-      keyfile: /secrets/dbt-service-keyfile-prod.json
+      keyfile: /home/ubartgcp1/secrets/dbt-service-keyfile-prod.json
       timeout_seconds: 300
       priority: interactive
       retries: 1
